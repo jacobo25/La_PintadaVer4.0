@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    android:orientation="vertical"
+    android:id="@+id/activity_main"
+    android:background="@color/lightyellow"
+    android:fillViewport="false"
+    tools:context="com.example.jacobo.la_pintada.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/StyleTexTitulo"
+                android:text="@string/farallones" />
+
+            <ImageView
+                style="@style/StyleImageView"
+                android:src="@drawable/farallones"/>
+
+            <TextView
+                style="@style/StyleTextHistoria"
+                android:text="@string/farallones2" />
+
+            <TextView
+                style="@style/StyleTexTitulo"
+                android:text="@string/tituloestacion" />
+
+            <ImageView
+                style="@style/StyleImageView"
+                android:src="@drawable/farallones"/>
+
+            <TextView
+                style="@style/StyleTextHistoria"
+                android:text="@string/estacion" />
+
+            <TextView
+                style="@style/StyleTexTitulo"
+                android:text="@string/titulocerro" />
+
+            <ImageView
+                style="@style/StyleImageView"
+                android:src="@drawable/farallones" />
+
+            <TextView
+                style="@style/StyleTextHistoria"
+                android:text="@string/cerro" />
+
+            <TextView
+                style="@style/StyleTexTitulo"
+                android:text="@string/titulopuente" />
+
+            <ImageView
+                style="@style/StyleImageView"
+                android:src="@drawable/puentenuevo" />
+
+            <TextView
+                style="@style/StyleTextHistoria"
+                android:text="@string/puente" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">La Pintada</string>
+    <string name="LaPintada">LA PINTADA</string>
+    <string name="registrarse">REGISTRARSE</string>
+    <string name="contrasena">CONTRASEÑA</string>
+    <string name="cancelar">CANCELAR</string>
+    <string name="correo">CORREO ELECTRONICO</string>
+    <string name="usuario">USUARIO</string>
+    <string name="InicioSesion">INICIAR SESION</string>
+    <string name="faltan_datos">Falta llenar algún dato</string>
+    <string name="incorrecto">El usuario o la contraseña no son correctas</string>
+    <string name="Confir.contraseña">CONFIRMAR CONTRASEÑA</string>
+    <string name="farallones">LOS FARALLONES</string>
+    <string name="farallones2">Estos cerros eran conocidos antiguamente como las mamas de caramanta. Ofrecen una gran riqueza paisajística.</string>
+    <string name="tituloestacion">ESTACIÓN DEL FERROCARRIL ALEJANDRO LÓPEZ</string>
+    <string name="estacion">La estación del ferrocarril data de los principios de la década de los 30 y tuvo una existencia que se remota hasta los años 70; en este sentido el municipio de La Pintada se estructuró en torno al rio y a la estación del ferrocarril, lo cual conllevó una serie de transformaciones en el orden social, urbano y cultural, expresadas en un acelerado crecimiento del corregimiento de La Pintada (estación Alejandro López).</string>
+    <string name="titulocerro">CERRO AMARILLO</string>
+    <string name="cerro">Este cerro nos brinda una excelente panorámica de la belleza natural de La Pintada. Hace parte de su gran pasado prehistórico, aún se encuentran evidencias de restos cerámicos y petroglifos (dibujos sobre piedras). Es de gran atractivo para las prácticas de parapentismo y caminatas ecológicas.</string>
+    <string name="titulopuente">PUENTE NUEVO</string>
+    <string name="puente">Se construyó un nuevo puente sobre el río Cauca para remplazar al anterior que era muy inestable. Esta nueva estructura conectó a Antioquia con el sur de Colombia y se constituyó como parte de la vía Panamericana, que cruza el continente desde Alaska hasta la Patagonia.</string>
+    <string name="miperfil">Mi Perfil</string>
+    <string name="volver">Principal</string>
+    <string name="cerrar">Cerrar sesión</string>
+</resources>
