@@ -21,4 +21,22 @@
     <string name="miperfil">Mi Perfil</string>
     <string name="volver">Principal</string>
     <string name="cerrar">Cerrar sesión</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dinastia">HOTEL REAL DINASTIA</string>
+    <string name="sol">HOTEL SOL PINTADA</string>
+    <string name="villa">HOTEL VILLA CAMILA</string>
+    <string name="hoteles">Hoteles</string>
+    <string name="sitios">Sitios turísticos</string>
+    <string name="rest">Restaurantes</string>
+    <string name="action_settings">Revisar</string>
+    <string name="title_activity_hotel">HotelActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="puerta">La Puerta de Antioquia</string>
+    <string name="puerta2">La Puerta De Antioquia  El municipio de La Pintada es relativamente nuevo, fue elevado a la categoría de municipio en el año de 1997. Su ubicación geográfica en el sur del Departamento, lo hace paso obligado hacía y desde el Sur del País, razón por la cual se le denomina “La Puerta de Antioquia”  La Pintada se encuentra ubicada a una altitud de 600 msnm y su temperatura promedio es de 27°C.  La principal fuente hídrica del municipio de La Pintada es el Río Cauca que atraviesa su territorio, dividiendo en dos partes su área urbana, las cuales se unen por medio de dos puentes, dando origen a una belleza paisajista inolvidable para los turistas que lo visitan. En él se práctica el canotaje y en sus riberas se realizan caminatas ecológicas. Además de ello están sus afluentes los ríos Armas, Cartama y Poblanco.  Dentro se la oferta gastronómica de La Pintada encontramos platos típicos de la comida antioqueña, así como diversos platos basados en la preparación de pescados de agua dulce.</string>
+    <string name="titulofarallones">LOS FARALLONES</string>
+    <string name="titulorosa">ASADOS DOÑA ROSA</string>
+    <string name="titulosalpicon">SALPICOLANDIA</string>
+    <string name="tituloMonas">ESTADERO LAS MONAS</string>
 </resources>

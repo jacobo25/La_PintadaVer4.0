@@ -10,6 +10,8 @@ import android.widget.TextView;
 public class PerfilActivity extends AppCompatActivity{
 
     TextView tPUsuario,tPCorreo;
+    Intent intent;
+    String Usuario,Correo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,34 +21,72 @@ public class PerfilActivity extends AppCompatActivity{
         tPUsuario = (TextView) findViewById(R.id.tPUsuario);
         tPCorreo = (TextView) findViewById(R.id.tPCorreo);
 
-        Bundle extras= getIntent().getExtras();
-        tPUsuario.setText(extras.getString("Usuario"));
-        tPCorreo.setText(extras.getString("Correo"));
+        Bundle extras = getIntent().getExtras();
+        Usuario = extras.getString("Usuario");
+        Correo = extras.getString("Correo");
+
+        tPUsuario.setText("NOMBRE: "+""+extras.getString("Usuario"));
+        tPCorreo.setText("CORREO: "+""+extras.getString("Correo"));
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu,menu);
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu, menu);
         return true;
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        switch (id){
-            case R.id.mPerfil:break;
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
 
-            case R.id.mCerrar:
-                Intent b = new Intent(this,LoginActivity.class);
-                startActivity(b);
+        //noinspection SimplifiableIfStatement
+        int id = item.getItemId();
+        switch (id) {
+            case R.id.mPerfil:
+                intent = new Intent(this, PerfilActivity.class);
+                intent.putExtra("Usuario",Usuario);
+                intent.putExtra("Correo",Correo);
+                startActivity(intent);
                 finish();
                 break;
             case R.id.mPrincipal:
-                Intent a = new Intent(this,MainActivity.class);
-                startActivity(a);
+                intent = new Intent(this, MainActivity.class);
+                intent.putExtra("Usuario",Usuario);
+                intent.putExtra("Correo",Correo);
+                startActivity(intent);
+                finish();
+                break;
+            case R.id.mHoteles:
+                intent = new Intent(this, HotelActivity.class);
+                intent.putExtra("Usuario",Usuario);
+                intent.putExtra("Correo",Correo);
+                startActivity(intent);
+                finish();
+                break;
+            case R.id.mSitios:
+                intent = new Intent(this, SitiosActivity.class);
+                intent.putExtra("Usuario",Usuario);
+                intent.putExtra("Correo",Correo);
+                startActivity(intent);
+                finish();
+                break;
+            case R.id.mRestaurantes:
+                intent = new Intent(this, RestActivity.class);
+                intent.putExtra("Usuario",Usuario);
+                intent.putExtra("Correo",Correo);
+                startActivity(intent);
+                finish();
+                break;
+            case R.id.mCerrar:
+                intent = new Intent(this, LoginActivity.class);
+                startActivity(intent);
                 finish();
                 break;
         }
 
-        return true;
+        return super.onOptionsItemSelected(item);
     }
 }

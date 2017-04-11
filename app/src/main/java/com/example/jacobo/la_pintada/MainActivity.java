@@ -38,16 +38,42 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
                 break;
-
+            case R.id.mPrincipal:
+                intent = new Intent(this, MainActivity.class);
+                intent.putExtra("Usuario",Usuario);
+                intent.putExtra("Correo",Correo);
+                startActivity(intent);
+                finish();
+                break;
+            case R.id.mHoteles:
+                intent = new Intent(this, HotelActivity.class);
+                intent.putExtra("Usuario",Usuario);
+                intent.putExtra("Correo",Correo);
+                startActivity(intent);
+                finish();
+                break;
+            case R.id.mSitios:
+                intent = new Intent(this, SitiosActivity.class);
+                intent.putExtra("Usuario",Usuario);
+                intent.putExtra("Correo",Correo);
+                startActivity(intent);
+                finish();
+                break;
+            case R.id.mRestaurantes:
+                intent = new Intent(this, RestActivity.class);
+                intent.putExtra("Usuario",Usuario);
+                intent.putExtra("Correo",Correo);
+                startActivity(intent);
+                finish();
+                break;
             case R.id.mCerrar:
                 intent = new Intent(this, LoginActivity.class);
                 startActivity(intent);
                 finish();
                 break;
-
-            case R.id.mPrincipal:break;
         }
 
-        return true;
+        return super.onOptionsItemSelected(item);
+
     }
 }

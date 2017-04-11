@@ -14,13 +14,13 @@
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="94dp"
+        android:layout_height="68dp"
         android:src="@drawable/titulo"
         android:layout_gravity="center"/>
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="130dp"
+        android:layout_height="102dp"
         android:src="@drawable/lapintada"
         android:gravity="center"/>
 

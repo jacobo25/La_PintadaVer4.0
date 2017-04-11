@@ -21,54 +21,14 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                style="@style/StyleTexTitulo"
-                android:text="@string/farallones" />
+            <TextView style="@style/StyleTexTitulo"
+                android:text="@string/puerta"/>
 
-            <ImageView
-                style="@style/StyleImageView"
-                android:src="@drawable/farallones"/>
+            <ImageView style="@style/StyleImageView"
+                android:src="@drawable/lapintada"/>
 
-            <TextView
-                style="@style/StyleTextHistoria"
-                android:text="@string/farallones2" />
-
-            <TextView
-                style="@style/StyleTexTitulo"
-                android:text="@string/tituloestacion" />
-
-            <ImageView
-                style="@style/StyleImageView"
-                android:src="@drawable/farallones"/>
-
-            <TextView
-                style="@style/StyleTextHistoria"
-                android:text="@string/estacion" />
-
-            <TextView
-                style="@style/StyleTexTitulo"
-                android:text="@string/titulocerro" />
-
-            <ImageView
-                style="@style/StyleImageView"
-                android:src="@drawable/farallones" />
-
-            <TextView
-                style="@style/StyleTextHistoria"
-                android:text="@string/cerro" />
-
-            <TextView
-                style="@style/StyleTexTitulo"
-                android:text="@string/titulopuente" />
-
-            <ImageView
-                style="@style/StyleImageView"
-                android:src="@drawable/puentenuevo" />
-
-            <TextView
-                style="@style/StyleTextHistoria"
-                android:text="@string/puente" />
-
+            <TextView style="@style/StyleTextHistoria"
+                android:text="@string/puerta2"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

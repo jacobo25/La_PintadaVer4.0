@@ -8,6 +8,15 @@
         android:id="@+id/mPrincipal"
         android:title="@string/volver"/>
     <item
+        android:id="@+id/mHoteles"
+        android:title="@string/hoteles"/>
+    <item
+        android:id="@+id/mSitios"
+        android:title="@string/sitios"/>
+    <item
+        android:id="@+id/mRestaurantes"
+        android:title="@string/rest"/>
+    <item
         android:id="@+id/mCerrar"
         android:title="@string/cerrar"/>
 

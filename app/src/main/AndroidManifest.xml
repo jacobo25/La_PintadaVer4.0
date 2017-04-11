@@ -15,10 +15,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity"></activity>
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".RegistroActivity"></activity>
-        <activity android:name=".PerfilActivity"></activity>
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".MainActivity"/>
+        <activity
+            android:name=".HotelActivity"
+            android:label="@string/title_activity_hotel"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".SitiosActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".RestActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".RegistroActivity"/>
+        <activity android:name=".PerfilActivity"/>
     </application>
 
 </manifest>
