@@ -1,6 +1,7 @@
 package com.example.jacobo.la_pintada;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
@@ -18,6 +19,11 @@ import com.example.jacobo.la_pintada.R;
 public class DrawerActivity extends AppCompatActivity {
 
     private DrawerLayout drawerLayout;
+    
+    String Usuario, Correo;
+    SharedPreferences prefs;
+    SharedPreferences.Editor editor;
+
 
 
     @Override
@@ -35,6 +41,14 @@ public class DrawerActivity extends AppCompatActivity {
             // Seleccionar item por defecto
             seleccionarItem(navigationView.getMenu().getItem(0));
         }
+
+        prefs = getSharedPreferences("MisPreferencias",MODE_PRIVATE);
+        editor = prefs.edit();
+
+        Bundle extras = getIntent().getExtras();
+        Usuario = extras.getString("Usuario");
+        Correo = extras.getString("Correo");
+
     }
 
     private void agregarToolbar() {
@@ -83,7 +97,10 @@ public class DrawerActivity extends AppCompatActivity {
                 fragmentoGenerico = new FragmentoSitios();
                 break;
             case R.id.nav_salir:
+                editor.putInt("login",-1);
+                editor.commit();
                 startActivity(new Intent(this, LoginActivity.class));
+                finish();
                 break;
         }
         if (fragmentoGenerico != null) {

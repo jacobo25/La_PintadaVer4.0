@@ -55,9 +55,10 @@ public class FragmentoHoteles extends Fragment {
 
     private void poblarViewPager(ViewPager viewPager) {
         AdaptadorSecciones adapter = new AdaptadorSecciones(getFragmentManager());
-        adapter.addFragment(new DinastiaFragment(), getString(R.string.titulodinastia));
-        adapter.addFragment(new SolFragment(), getString(R.string.titulosol));
-        adapter.addFragment(new VillaFragment(), getString(R.string.titulovilla));
+        adapter.addFragment(new DinastiaFragment(), getString(R.string.hotel1));
+        adapter.addFragment(new SolFragment(), getString(R.string.hotel2));
+        adapter.addFragment(new VillaFragment(), getString(R.string.hotel3));
+        adapter.addFragment(new MapaHotelesFragment(), getString(R.string.mapa));
         viewPager.setAdapter(adapter);
     }
 

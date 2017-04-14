@@ -55,9 +55,10 @@ public class FragmentoRestaurantes extends Fragment {
 
     private void poblarViewPager(ViewPager viewPager) {
         AdaptadorSecciones adapter = new AdaptadorSecciones(getFragmentManager());
-        adapter.addFragment(new RosaFragment(), getString(R.string.titulorosa));
-        adapter.addFragment(new SalpiconFragment(), getString(R.string.titulosalpicon));
-        adapter.addFragment(new MonasFragment(), getString(R.string.tituloMonas));
+        adapter.addFragment(new RosaFragment(), getString(R.string.restaurante1));
+        adapter.addFragment(new SalpiconFragment(), getString(R.string.restaurante2));
+        adapter.addFragment(new MonasFragment(), getString(R.string.restaurante3));
+        adapter.addFragment(new MapaRestaurantesFragment(), getString(R.string.mapa));
         viewPager.setAdapter(adapter);
     }
 

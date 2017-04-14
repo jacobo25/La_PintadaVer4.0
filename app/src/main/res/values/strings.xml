@@ -58,5 +58,15 @@
     <string name="asadosrosa">Asados Doña Rosa nació el 10 de Octubre de 1986, en el Alto de Las Palmas en un espacio muy pequeño en el cual solo había dos mesas; para gracia de Dios y Doña Rosa, desde que se abrieron las puertas de este pequeño restaurante ha sido todo un éxito porque siempre se le transmitió buena energía en todo lo que allí se hacía. La comida típica Colombiana tenía ese sabor casero contagiado de mucho amor y sacrificio, ya que se empezó de ceros, solo lo que habia eran ganas de trabajar y de hacer de este pequeño espacio un refugio para clientes y comenzales que transitaban por esta vía.  Una de las primeras frases de Doña Rosa al abrir la puerta fue: \"si las iglesias se hacen a punta de empanadas yo porque no puedo hacer empanadas con lágrimas\", ya que en ese momento nació su hijo menor, de ahí surge esa frase que nunca olvidará y que siempre le da gracias a Dios por esta maravillosa empresa que cuenta con mas de 250 empleados que son una familia al servicio de todos nuestros clientes.</string>
     <string name="salpicolandia">Excelente lugar para tomar un desayuno, almuerzo y cena. para quienes recorren la carretera o se hospeden en el centro recreacional comfenalco. Buenos precios.</string>
     <string name="monas">Un excelente lugar para compartir un delicioso desayuno, almuerzo o cena, además, su ubicación en toda la vía principal, facilita el ingreso a este.</string>
-    <string name="title_activity_prueba">PruebaActivity</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="mapa">MAPA</string>
+    <string name="hotel1">HOTEL 1</string>
+    <string name="hotel2">HOTEL 2</string>
+    <string name="hotel3">HOTEL 3</string>
+    <string name="restaurante1">RESTAURANTE 1</string>
+    <string name="restaurante2">RESTAURANTE 2</string>
+    <string name="restaurante3">RESTAURANTE 3</string>
+    <string name="sitio1">SITIO 1</string>
+    <string name="sitio2">SITIO 2</string>
+    <string name="sitio3">SITIO 3</string>
 </resources>

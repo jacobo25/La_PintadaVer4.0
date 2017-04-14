@@ -53,9 +53,10 @@ public class FragmentoSitios extends Fragment {
 
     private void poblarViewPager(ViewPager viewPager) {
         AdaptadorSecciones adapter = new AdaptadorSecciones(getFragmentManager());
-        adapter.addFragment(new FarallonesFragment(), getString(R.string.titulofarallones));
-        adapter.addFragment(new EstacionFragment(), getString(R.string.tituloestacion));
-        adapter.addFragment(new CerroFragment(), getString(R.string.titulocerro));
+        adapter.addFragment(new FarallonesFragment(), getString(R.string.sitio1));
+        adapter.addFragment(new EstacionFragment(), getString(R.string.sitio2));
+        adapter.addFragment(new CerroFragment(), getString(R.string.sitio3));
+        adapter.addFragment(new MapaSitiosFragment(), getString(R.string.mapa));
         viewPager.setAdapter(adapter);
     }
 
