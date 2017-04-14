@@ -6,14 +6,20 @@
     tools:context="com.example.jacobo.la_pintada.DinastiaFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-        <TextView style="@style/StyleTexTitulo"
-            android:text="@string/dinastia"/>
-        <ImageView style="@style/StyleImageView"
-            android:src="@drawable/dinastia"/>
-    </LinearLayout>
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView style="@style/StyleTexTitulo"
+                android:text="@string/titulodinastia"/>
+            <ImageView style="@style/StyleImageView"
+                android:src="@drawable/dinastia"/>
+            <TextView style="@style/StyleTextHistoria"
+                android:text="@string/Dinastia"/>
+        </LinearLayout>
+    </ScrollView>
 
 </FrameLayout>

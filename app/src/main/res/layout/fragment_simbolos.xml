@@ -1,0 +1,39 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightyellow"
+    tools:context="com.example.jacobo.la_pintada.SimbolosFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView style="@style/StyleTexTitulo"
+                android:text="@string/tituloescudo"/>
+
+            <ImageView style="@style/StyleImageView"
+                android:src="@drawable/escudo"/>
+
+            <TextView style="@style/StyleTextHistoria"
+                android:text="@string/escudo"/>
+
+            <TextView style="@style/StyleTexTitulo"
+                android:text="@string/titulobandera"/>
+
+            <ImageView style="@style/StyleImageView"
+                android:src="@drawable/bandera"/>
+
+            <TextView style="@style/StyleTextHistoria"
+                android:text="@string/bandera"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

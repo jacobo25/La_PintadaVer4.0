@@ -1,21 +1,27 @@
 package com.example.jacobo.la_pintada;
 
 import android.content.Intent;
-import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+
+import android.widget.TextView;
 
 public class HotelActivity extends AppCompatActivity {
 
-    String Usuario, Correo;
-    Intent intent;
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
      * fragments for each of the sections. We use a
@@ -24,12 +30,12 @@ public class HotelActivity extends AppCompatActivity {
      * may be best to switch to a
      * {@link android.support.v4.app.FragmentStatePagerAdapter}.
      */
-      private SectionsPagerAdapter mSectionsPagerAdapter;
+    private SectionsPagerAdapter mSectionsPagerAdapter;
 
     /**
      * The {@link ViewPager} that will host the section contents.
      */
-     private ViewPager mViewPager;
+    private ViewPager mViewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,24 +48,22 @@ public class HotelActivity extends AppCompatActivity {
         // primary sections of the activity.
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
 
+
+
         // Set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
-
-        Bundle extras = getIntent().getExtras();
-        Usuario = extras.getString("Usuario");
-        Correo = extras.getString("Correo");
-
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu, menu);
+        //getMenuInflater().inflate(R.menu.menu_hotel, menu);
+        getMenuInflater().inflate(R.menu.menu,menu);
         return true;
     }
 
@@ -68,55 +72,52 @@ public class HotelActivity extends AppCompatActivity {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-
-        //noinspection SimplifiableIfStatement
         int id = item.getItemId();
-        switch (id) {
+
+        switch (id){
             case R.id.mPerfil:
-                intent = new Intent(this, PerfilActivity.class);
-                intent.putExtra("Usuario",Usuario);
-                intent.putExtra("Correo",Correo);
-                startActivity(intent);
+                Intent a = new Intent(this,PerfilActivity.class);
+                startActivity(a);
                 finish();
                 break;
-            case R.id.mPrincipal:
-                intent = new Intent(this, MainActivity.class);
-                intent.putExtra("Usuario",Usuario);
-                intent.putExtra("Correo",Correo);
-                startActivity(intent);
+
+            case R.id.mCerrar:
+                Intent b = new Intent(this,LoginActivity.class);
+                startActivity(b);
                 finish();
                 break;
             case R.id.mHoteles:
-                intent = new Intent(this, HotelActivity.class);
-                intent.putExtra("Usuario",Usuario);
-                intent.putExtra("Correo",Correo);
-                startActivity(intent);
-                finish();
+
                 break;
-            case R.id.mSitios:
-                intent = new Intent(this, SitiosActivity.class);
-                intent.putExtra("Usuario",Usuario);
-                intent.putExtra("Correo",Correo);
-                startActivity(intent);
+
+            case R.id.mPrincipal:
+                Intent b5 = new Intent(this,MainActivity.class);
+                startActivity(b5);
                 finish();
+
+
                 break;
             case R.id.mRestaurantes:
-                intent = new Intent(this, RestActivity.class);
-                intent.putExtra("Usuario",Usuario);
-                intent.putExtra("Correo",Correo);
-                startActivity(intent);
+                Intent b3 = new Intent(this,RestActivity.class);
+                startActivity(b3);
                 finish();
+
                 break;
-            case R.id.mCerrar:
-                intent = new Intent(this, LoginActivity.class);
-                startActivity(intent);
+            case R.id.mSitios:
+                Intent b4 = new Intent(this,SitiosActivity.class);
+
+                startActivity(b4);
                 finish();
+
                 break;
         }
 
         return super.onOptionsItemSelected(item);
     }
 
+    /**
+     * A placeholder fragment containing a simple view.
+     */
     public class PagerAdapter extends FragmentPagerAdapter{
 
         public PagerAdapter(FragmentManager fm) {
@@ -139,6 +140,10 @@ public class HotelActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
+     * one of the sections/tabs/pages.
+     */
     public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
         public SectionsPagerAdapter(FragmentManager fm) {
@@ -170,13 +175,15 @@ public class HotelActivity extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return getResources().getString(R.string.dinastia);
+                    return getResources().getString(R.string.titulodinastia);
                 case 1:
-                    return getResources().getString(R.string.sol);
+                    return getResources().getString(R.string.titulosol);
                 case 2:
-                    return getResources().getString(R.string.villa);
+                    return getResources().getString(R.string.titulovilla);
             }
             return null;
         }
     }
+
+
 }

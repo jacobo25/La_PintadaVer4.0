@@ -52,7 +52,7 @@ public class LoginActivity extends AppCompatActivity {
         }
         else if (eLUsuario.getText().toString().equals(Usuario) && (eLClave.getText().toString().equals(Clave))){
 
-            Intent intent = new Intent(this,MainActivity.class);
+            Intent intent = new Intent(this,DrawerActivity.class);
             intent.putExtra("Usuario",Usuario);
             intent.putExtra("Contraseña",Clave);
             intent.putExtra("Correo",Correo);

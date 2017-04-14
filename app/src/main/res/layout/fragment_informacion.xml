@@ -1,0 +1,33 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightyellow"
+    tools:context="com.example.jacobo.la_pintada.InformacionFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/StyleTexTitulo"
+                android:text="@string/puerta" />
+
+            <ImageView
+                style="@style/StyleImageView"
+                android:src="@drawable/lapintada"
+                android:layout_height="82dp" />
+
+            <TextView
+                style="@style/StyleTextHistoria"
+                android:text="@string/puerta2" />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

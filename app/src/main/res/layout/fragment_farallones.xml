@@ -6,16 +6,20 @@
     tools:context="com.example.jacobo.la_pintada.FarallonesFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-        <TextView style="@style/StyleTexTitulo"
-            android:text="@string/titulofarallones"/>
-        <ImageView style="@style/StyleImageView"
-            android:src="@drawable/farallones"/>
-        <TextView style="@style/StyleTextHistoria"
-            android:text="@string/estacion"/>
-    </LinearLayout>
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView style="@style/StyleTexTitulo"
+                android:text="@string/titulofarallones"/>
+            <ImageView style="@style/StyleImageView"
+                android:src="@drawable/farallones"/>
+            <TextView style="@style/StyleTextHistoria"
+                android:text="@string/farallones2"/>
+        </LinearLayout>
+    </ScrollView>
 
 </FrameLayout>

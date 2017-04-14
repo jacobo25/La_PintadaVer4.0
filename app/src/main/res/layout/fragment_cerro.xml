@@ -6,16 +6,20 @@
     tools:context="com.example.jacobo.la_pintada.CerroFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-        <TextView style="@style/StyleTexTitulo"
-            android:text="@string/titulocerro"/>
-        <ImageView style="@style/StyleImageView"
-            android:src="@drawable/cerro"/>
-        <TextView style="@style/StyleTextHistoria"
-            android:text="@string/cerro"/>
-    </LinearLayout>
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView style="@style/StyleTexTitulo"
+                android:text="@string/titulocerro"/>
+            <ImageView style="@style/StyleImageView"
+                android:src="@drawable/cerro"/>
+            <TextView style="@style/StyleTextHistoria"
+                android:text="@string/cerro"/>
+        </LinearLayout>
+    </ScrollView>
 
 </FrameLayout>
